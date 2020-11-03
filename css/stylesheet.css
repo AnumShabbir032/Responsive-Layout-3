@@ -94,39 +94,58 @@
 
 
 /* Media Queries */
-
-/* Media Queries for Tablet  */
-@media (min-width: 768px) and (max-width: 1024px) {
+/* Media Queries for pc */ 
+@media(max-width: 1024px){
     .cards {
         display: flex;
         width: 100%;
         justify-content: space-between;
         flex-direction: row;
-        margin: 19rem 0rem 13rem 0rem;
-    }
-    #green-box{
-        display: none;
+        margin: 13rem 0;
     }
     .box {
         display: flex;
-        width: 16rem;
+        width: 14rem;
         padding: 9rem 1rem 1rem 1rem;
         height: 20rem;
-        margin: 6px;
+        margin: 15px;
         box-shadow: 5px 10px 18px #888888;
     }
+    .flex-item {
+        padding: 70px;
+        border-radius: 50%;
+        height: 150px;
+        width: 50%;
+        display: flex;
+        margin: 7px 24px;
+        align-items: center;
+    }
+ }
+ /* End Media Queries for pc Laptop  */
+/* Media Queries for Tablet  */
+@media (max-width: 768px) {
+    .cards {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: row;
+        margin: 13rem 0 10rem 0;
+    }
+    #green-box{
+        display: none;
+    }    
 }
 /* End Media Queries for Tablet */ 
 
 /*Media Queries for Smartphones Mobiles (Portrait) */
-@media (min-width: 320px) and (max-width: 480px){
+@media (max-width: 576px ){
     .header {
         width: 100%;
         height: 30px;
     }
     .circle {
-        padding: 6px 7px;
-        margin: 2px 5px;
+        padding: 3px 11px;
+        margin: 0px 7px;
     }
     .menu{
         display: flex;
@@ -144,8 +163,11 @@
         padding: 7px 7px;
     }   
     .cards {
-        width: 82%;
-        margin: 25px auto; 
+        width: 100%;
+        margin: 30px auto;
+    }
+    .box{
+        margin: 15px auto;
     }
     #crimson-box{
         display: none;
